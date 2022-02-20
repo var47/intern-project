@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<title>Welcome to RIDER'S PIT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="fontfamily.css">
+<style>
+ 
+body, html {
+  height: 100%;
+  font-family: "jost", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("D:/codes/intern project/images/bikers-cafe-kolkata.jpg");
+  min-height: 70%;
+}
+
+.menu {
+  display: none;
+}
+
+</style>
+<body style="background-color:#ffffe6";>
+<!-- Links (sit on top) -->
+<div class="top">
+  <div class="row padding black">
+    <div class="col s3">
+      <a href="#" class="button block black">HOME</a>
+    </div>
+    <div class="col s3">
+      <a href="#about" class="button block black">ABOUT</a>
+    </div>
+    <div class="col s3">
+      <a href="#menu" class="button block black">MENU</a>
+    </div>
+    <div class="col s3">
+      <a href="#where" class="button block black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg display-container red-min" id="home">
+  
+  <div class="display-bottomleft center padding-large hide-small">
+    <span class="tag">Open from 6am to 5pm</span>
+  </div>
+  <div class="display-middle center">
+    <span class="text-white" style="font-size:90px">Rider's<br>Pit</span>
+  </div>
+  <div class="display-bottomright center padding-large">
+    <span class="text-white">For the Riders, by the Riders</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="#ffffe6 large">
+
+
+<!-- About Container -->
+<div class="container" id="about">
+  <div class="content" style="max-width:700px">
+    <h5 class="center padding-64"><span class="tag wide">ABOUT RIDER'S PIT</span></h5>
+    <p>Rider's pit is a motorcycle themed cafe which was built for the Riders by the Riders. Here you can have your shot of caffeine to boost your adrenaline in your favourite coffee with your riding buddies. And don't you feel lonely if you don' have any friend who is a petrolhead like you, because at Rider's Pit, you will find a lot of like minded petrolheads. </p>
+    <p>In addition to our open minded petrolhead frienfly space, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+    <div class="panel leftbar light-grey">
+      <p><i>"We all need fuel for ourselves in the form of coffee or tea just like our bikes need petrol."</i></p>
+      <p>Head Chef, Coffeeist and another petrolhead: Kumar Vivek</p>
+    </div>
+    <img src=url ("D:/codes/intern project/images/9-1.jpg") style="width:100%;max-width:900px" class="margin-top">
+    <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+    <p><strong>Address:</strong> Green Heritage, Boring Road, Patna</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="container" id="menu">
+  <div class="content" style="max-width:700px">
+ 
+    <h5 class="center padding-48"><span class="tag wide">THE MENU</span></h5>
+  
+    <div class="row center card padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="col s6 tablink">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="col s6 tablink">Drink</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="container menu padding-48 card">
+      <h5>Parathas</h5>
+      <p class="text-grey">Aloo paratha <font color="red"> INR25</font></p><br>
+      <p class="text-grey">Paeer paratha <font color="red"> INR30</font> </p><br>
+      <p class="text-grey">Gobhi paratha <font color="red"> INR20</font></p><br>
+      <p class="text-grey">Shahi paratha <font color="red"> INR50</font></p><br>
+    
+      <h5>Sabzis</h5>
+      <p class="text-grey">Aloo Matar <font color="red">INR70</font></p><br>
+      <p class="text-grey">Paneer Matar <font color="red">INR100</font></p><br>
+      <p class="text-grey">Shahi Paneer <font color="red">INR150</font></p><br>
+      <p class="text-grey">Chilly Paneer <font color="red">INR170</font></p><br>
+      <p class="text-grey">Paneer do pyaaz <font color="red">INR120</font></p><br>
+    
+      <h5>Desserts</h5>
+      <p class="text-grey">Chocolate Icecream <font color="red">INR90</font></p><br>
+      <p class="text-grey">Vanilla Icecream <font color="red">INR70</font></p><br>
+      <p class="text-grey">Strawberry Icecream <font color="red">INR80</font></p><br>
+      <p class="text-grey">Tutti Frutti Icecream <font color="red">INR100</font></p><br>
+    
+
+    </div>
+
+    <div id="Drinks" class="container menu padding-48 card">
+      <h5>Coffee</h5>
+      <p class="text-grey">Regular coffee <font color="red">INR40</font></p><br>
+    
+      <h5>Chocolato</h5>
+      <p class="text-grey">Chocolate espresso with milk <font color="red">INR60</font></p><br>
+    
+      <h5>Corretto</h5>
+      <p class="text-grey">Black coffee <font color="red">INR50</font></p><br>
+    
+      <h5>Iced tea</h5>
+      <p class="text-grey">Hot tea, except not hot <font color="red">INR20</font></p><br>
+    
+      <h5>Soda</h5>
+      <p class="text-grey">Coke, Sprite, Fanta, etc. <font color="red">as per th bottle or can</font></p>
+    </div>  
+    <img src="D:/codes/intern project/images/p33600-150218370159898115e266a.jpg" padding-48>
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="container" id="where" style="padding-bottom:32px;">
+  <div class="content" style="max-width:700px">
+    <h5 class="center padding-48"><span class="tag wide">WHERE TO FIND US</span></h5>
+    <p>Find us at some address at some place.</p>
+    <img src="/w3images/map.jpg" class="image" style="width:100%">
+    <p><span class="tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="input padding-16 border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="input padding-16 border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="input padding-16 border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="input padding-16 border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="button black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
